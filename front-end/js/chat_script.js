@@ -62,7 +62,7 @@ user.name = loginApelido;
 user.id = crypto.randomUUID();
 user.color = loginColor;
 
-websocket = new WebSocket("ws://localhost:8080")
+websocket = new WebSocket("wss://chat-backend-2zfg.onrender.com")
 websocket.onmessage = processMessage
 
 const sendMessage = (event) => {
