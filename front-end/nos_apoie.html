@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/connect.css">
+    <link rel="stylesheet" href="./css/right-bar.css">
+
+    <title>Youme | Nos apoie!</title>
+    <link rel="icon" type="image" href="img/favicon.png">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+
+</head>
+
+<body>
+    <nav class="navigation">
+        <ul>
+            <li class="logo"><img src="./img/favicon.png" alt="logo"></li>
+            <li><a href="index.html">PÁGINA INICIAL</a></li>
+            <li><a href="sobre_nos.html">SOBRE NÓS</a></li>
+            <li class="active"><a href="nos_apoie.html">APOIE ESTA PLATAFORMA</a></li>
+            <li><a href="mapa/mapa.html">PROCURE SEUS AMIGOS</a></li>
+        </ul>
+    </nav>
+    <section class="connection">
+
+        <section class="login" id="Login">
+
+            <h2>Login</h2>
+
+            <form action="./php/login.php" class="login-form">
+                <label for="email">Apelido</label>
+                <input type="text" name="email" class="login-email" required /><br>
+                <label for="psw">Senha</label>
+                <input type="password" name="psw" class="login-password" required minlength ="8" /><br>
+                <label for="namecolor">Escolha a cor do seu Apelido</label>
+                <input type="color" name="namcolor" id="namecolor">
+
+                <button type="submit" class="login-button">Logar</button><br><br>
+            </form>
+
+            <p>Não possui uma conta?
+                <a class="open-cadastrar" onclick="cadastrar()">Registre-se</a>
+            </p>
+
+        </section>
+
+        <section class="cadastro" id="Cadastrar">
+
+            <h2>Cadastro</h2>
+
+            <form action="./php/register.php" class="register-form">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" class="register-email" required /><br>
+                <label for="apelido">Apelido</label>
+                <input type="text" name="apelido" class="register-apelido" required /><br>
+                <label for="psw">Senha</label>
+                <input type="password" name="psw" class="register-password" required minlength="8" /><br>
+                <label for="confirmar">Confirmar Senha</label>
+                <input type="password" name="confirmar" class="register-confirmar" required /><br>
+                <label for="receive">Aceita receber e-mails de notificação e anúncios?</label>
+                <input type="radio" name="receive" id="receive-email1" checked required> Sim
+                <input type="radio" name="receive" id="receive-email2" checked required> Não
+
+
+                <button type="submit" class="register-button">Cadastrar</button>
+            </form>
+
+            <p>Já possui uma conta?
+                <a class="open-login" onclick="logar()">Faça Login</a>
+            </p>
+
+        </section>
+
+    </section>
+
+    <div class="overlay" onclick="removeroverlay()" id="Dark"></div>
+
+    <section class="container">
+
+        <img class="img" src="./img/image.png" alt="Abigail">
+        <ul class="no-under">
+            <li>Abigail Sayury Nakashima</li>
+            <li>Email de Contato: abigail.s.nakashima@unesp.br</li>
+        </ul>
+        <img class="img" src="./img/image (1).png" alt="Miguel">
+        <ul class="no-under">
+            <li>Miguel de Campos Rodrigues Moret</li>
+            <li>Email de Contato: miguel.moret@unesp.br</li>
+        </ul>
+
+    </section>
+
+    <secion class="right-bar">
+        <ul>
+            <li class="open-all"><a><span class="material-symbols-outlined">
+                        menu
+                    </span></a></li>
+            <li class="not-connected"><a onclick="logar()"><span class="material-symbols-outlined">
+                        account_circle
+                    </span>
+                    <p>login</p>
+                </a></li>
+            <li class="settings"><a><span class="material-symbols-outlined">
+                        settings
+                    </span>
+                    <p>configurações</p>
+                </a></li>
+        </ul>
+    </secion>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/popup.js"></script>
+</body>
+
+</html>

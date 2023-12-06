@@ -1,0 +1,128 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 998;
+    display: none;
+}
+
+.connection {
+    width: 300px;
+    padding: 10px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.login-apelido,
+.login-password,
+.register-email,
+.register-apelido,
+.register-password,
+.register-confirmar {
+    border: none;
+    padding: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    background-color: #FBE0F2;
+    color: #BF5677;
+    outline: none;
+    border-radius: 20px;
+}
+
+.connection .login-button,
+.register-button {
+    background-color: #FF4343;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    font-weight: 800;
+}
+
+.connection .login-button:hover,
+.register-button:hover,
+.open:hover {
+    opacity: 1;
+}
+
+.connection>.login {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 30%;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    z-index: 999;
+}
+
+.connection>.cadastro {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 30%;
+    max-height: 600px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    z-index: 999;
+}
+
+.connection h2 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.open-login {
+    color: #FF4343;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    display: inline-block;
+    padding-left: 15px;
+}
+
+
+.open-cadastrar {
+    color: #FF4343;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    display: inline-block;
+}
+
+label {
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.connection input {
+    font-size: 0.85rem;
+}

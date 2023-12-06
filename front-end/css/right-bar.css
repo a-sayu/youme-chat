@@ -1,0 +1,53 @@
+.right-bar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    padding: 0;
+    margin-left: 90%;
+    background-color: #FF4343;
+    height: 99.9%;
+    width: 10%;
+    z-index: 99999;
+}
+
+.right-bar:hover {
+    margin-left: 80%;
+    width: 20%;
+}
+
+.right-bar:not(:hover) p {
+    display: none;
+}
+
+.right-bar ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+
+}
+
+.right-bar li {
+    color: #F6DBDB;
+    margin: 20px;
+    display: flex;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.right-bar a {
+    width: 100%;
+}
+
+.right-bar li:hover:not(.open-all) {
+    cursor: pointer;
+    background-color: rgba(246, 219, 219, 0.4)
+}
+
+.right-bar:not(:hover) li {
+    justify-content: center;
+}
+
+.settings {
+    bottom: 0;
+}

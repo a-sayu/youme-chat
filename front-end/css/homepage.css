@@ -1,0 +1,47 @@
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.text {
+    font-weight: 500;
+    float: left;
+    width: 50%;
+    margin-left: 10%;
+}
+
+.text h2 {
+    padding-bottom: 2rem;
+    color: #FF4343;
+}
+
+.textocima > h2 {
+    font-size: 1.7rem;
+}
+
+.textocima {
+    text-align: right;
+}
+
+.textobaixo > h2 {
+    font-size: 1.25rem;
+}
+
+.textobaixo {
+    padding-top: 10%;
+    text-align: left;
+    margin-right: 20%;
+}
+
+.image img {
+    float: left;
+    margin-left: 20px;
+    max-width: 900px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.special {
+    color: #FF4343;
+}
